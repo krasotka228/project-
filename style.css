@@ -1,41 +1,12 @@
-.container{
+
+.grid { 
   display: grid;
-  gap: 50px 100px;
-  grid-template-columns: 100px 100px 100px;
-}
-.box-1 {
-  width: 150px; height:50px;
-  background-color: #FFC0CB; overflow-y: scroll;
-}
-.box-2{
-  width: 150px; height:50px;
-  background-color: #7FFFD4; overflow-y: scroll;
-}
-.box-3{
-  width: 150px; height:50px;
-  background-color: #F5F5DC; overflow-y: scroll;
-}
-.box-4 {
-  width: 150px; height:50px;
-  background-color: #FF7F50; overflow-y: scroll;
-}
-.box-5 {
-  width: 150px; height:50px;
-  background-color: #FFA500; overflow-y: scroll;
-}
-.box-6 {
-  width: 150px; height:50px;
-  background-color: #D2B48C; overflow-y: scroll;
-}
-.box-7 {
-  width: 150px; height:50px;
-  background-color: #00CED1; overflow-y: scroll;
-}
-.box-8 {
-  width: 150px; height:50px;
-  background-color: #F0F8FF; overflow-y: scroll;
-}
-.box-9 {
-  width: 150px; height:50px;
-  background-color: #00FF7F; overflow-y: scroll;
-}
+  grid-template-rows: 1fr 1fr 1fr; /*создаем три строчки с одинаковыми долями */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*создаем 3 столбца с одинаковыми долями*/
+  grid-gap: 2vw;
+  }
+.grid > div {
+  font-size: 5vw;
+  padding: .5em;
+  background: gold;
+  text-align: center;
